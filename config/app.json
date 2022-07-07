@@ -1,0 +1,5 @@
+{
+  "assets": {
+    "app": ["./build/js/app.js", "./build/css/style.scss"]
+  }
+}

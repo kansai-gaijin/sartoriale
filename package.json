@@ -1,0 +1,30 @@
+{
+  "name": "html5blankwptail",
+  "version": "1.0.0",
+  "description": "Tailwind Starter for Wordpress Based on html5blank for Wordpress",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env TAILWIND_MODE=build mix",
+    "watch": "cross-env TAILWIND_MODE=build mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "author": "Ciaran",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "browser-sync": "^2.27.9",
+    "browser-sync-webpack-plugin": "2.3.0",
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.43",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "jquery": "^3.5.1",
+    "locomotive-scroll": "^4.1.4"
+  }
+}

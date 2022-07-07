@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/******************************************/
+/* GLOBAL */
+html {
+  height: 100%;
+}
+.site-wrapper {
+  color: #c5913a;
+  overflow: hidden;
+  display: block;
+  max-width: 100%;
+  min-height: 100%;
+  background: black;
+}
+.container {
+  max-width: 1226px;
+  margin: auto;
+}
+
+/*****************************************************************/
+/* TEXT */
+.section-ttl span::after {
+  content: '';
+  display: block;
+  background-color: red;
+  height: 20px;
+  margin-top: 10px;
+}
+.section-ttl {
+  max-width: 775px;
+  margin: auto;
+}
+
+/****************************************************************/
+/* ANIMS */
+
+.fade-up {
+  transform: translateY(50%);
+  opacity: 0;
+  transition: 0.3s ease-out;
+  transition-delay: var(--transition-delay);
+}
+.fade-down {
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 0.3s ease-out;
+  transition-delay: var(--transition-delay);
+}
+.fade-up.show,
+.fade-down.show {
+  opacity: 1;
+  transform: none;
+}
+.fade {
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+.fade.show {
+  opacity: 1;
+}
+.loading {
+  transition: 0.5s ease-in-out !important;
+}
+body.loaded .loading {
+  opacity: 0;
+  pointer-events: none !important;
+}
+.main-container {
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+body.loaded .main-container {
+  opacity: 1;
+}
+.form br {
+  display: none;
+}
